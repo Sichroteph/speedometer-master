@@ -1,9 +1,8 @@
-
 #include <SoftwareSerial.h> // use the software uart
 SoftwareSerial bluetooth(2, 4); // RX, TX
 
 unsigned long previousMillis = 0;        // will store last time
-const long interval = 3000;           // interval at which to delay
+const long interval = 15000;           // Rafraichissement toutes les 15 secondes
 static uint32_t tmp; // increment this
 
 const int IN_BAT = A0;
@@ -29,12 +28,16 @@ int last_clg = 1;
 int last_cld = 1;
 int last_pf = 1;
 
-float fVoltageLu = 0;
+float nVoltageLu = 0;
 char cVoltageLu[10];
 String sVoltageLu;
 
-float voltage(int analogValue) {
-  return 0.0048 * analogValue;
+void EnvoieVoltage() {
+
+  //  dtostrf(fVoltageLu, 4, 6, cVoltageLu); //4 is mininum width, 6 is precision
+    sVoltageLu = String(nVoltageLu);
+    bluetooth.print(sVoltageLu + ";");
+    nVoltageLu = 0;
 }
 
 void setup() {
@@ -88,8 +91,6 @@ void setup() {
 void loop() {
   delay(10);
 
-
-
   //Serial.println("Itération");
 
   if (last_page != digitalRead(BTN_PAGE)) {
@@ -104,7 +105,7 @@ void loop() {
     last_page = digitalRead(BTN_PAGE);
   }
 
-  
+ 
   if (last_clg != digitalRead(BTN_CLG)) {
     digitalWrite(RL_LL_CLG, digitalRead(BTN_CLG));
     Serial.println("BTN_CLG");
@@ -118,7 +119,7 @@ void loop() {
     last_clg = digitalRead(BTN_CLG);
   }
 
-  
+ 
   if (last_cld != digitalRead(BTN_CLD)) {
     digitalWrite(RL_LL_CLD, digitalRead(BTN_CLD));
     Serial.println("BTN_CLD");
@@ -134,7 +135,7 @@ void loop() {
     last_cld = digitalRead(BTN_CLD);
   }
 
-  
+ 
   if (last_pf != digitalRead(BTN_PF)) {
     digitalWrite(RL_LL_PF, digitalRead(BTN_PF));
     Serial.println("BTN_PF");
@@ -150,17 +151,15 @@ void loop() {
     last_pf = digitalRead(BTN_PF);
   }
 
+// Toujours garder le max sur la période de temps "interval"
+if (analogRead(IN_BAT)>nVoltageLu) {
+  nVoltageLu = analogRead(IN_BAT);
+}
 
   unsigned long currentMillis = millis();
   if (currentMillis - previousMillis >= interval) {
     previousMillis = currentMillis;
-
-    fVoltageLu = voltage(analogRead(IN_BAT));
-    dtostrf(fVoltageLu, 4, 6, cVoltageLu); //4 is mininum width, 6 is precision
-    sVoltageLu = cVoltageLu;
-    bluetooth.print(sVoltageLu + ";");
-    //  Serial.println(sVoltageLu);
-    //  Serial.println(fVoltageLu);
+    EnvoieVoltage();
   }
 
   // RECEPTION BT
@@ -184,9 +183,17 @@ void loop() {
 
       case 'e':
         digitalWrite(RL_LL_CHAR, HIGH);
+        //reinitialisation du max précédent
+         nVoltageLu = 0;
+         // Forçage de renvoi du voltage
+         previousMillis = 0;
         break;
       case 'f':
         digitalWrite(RL_LL_CHAR, LOW);
+        //reinitialisation du max précédent
+         nVoltageLu = 0;
+         // Forçage de renvoi du voltage
+         previousMillis = 0;
         break;
 
       case 'g':
@@ -219,9 +226,17 @@ void loop() {
 
       case 'o':
         digitalWrite(RL_HL_12V, LOW);
+        //reinitialisation du max précédent
+         nVoltageLu = 0;
+         // Forçage de renvoi du voltage
+         previousMillis = 0;
         break;
       case 'p':
         digitalWrite(RL_HL_12V, HIGH);
+        //reinitialisation du max précédent
+         nVoltageLu = 0;
+         // Forçage de renvoi du voltage
+         previousMillis = 0;
         break;
 
       case 'q':
