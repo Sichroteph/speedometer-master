@@ -5,6 +5,6 @@ The phone checks the acceleration sensors for the alarm, receive every arduino p
 
 Edit to mention: the arduino estimates the battery percentage on an analog pin. There is a voltage divider between the battery (83V max) and the arduino (5V max)
 
-Sorry for the pinout written in french, I will try in the future to make one in English.
+Sorry for the pinout written in french, I will try in the future to make one in English. The white letters are the commands Android makes to the Arduino in order to turn on or off a relay.
 
 ![alt text](https://user-images.githubusercontent.com/16885275/115361480-eb652800-a1c0-11eb-9bd4-1d9657ae973b.png)
