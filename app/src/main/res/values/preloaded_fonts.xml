@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aldrich</item>
+        <item>@font/coda</item>
+        <item>@font/faster_one</item>
+        <item>@font/titan_one</item>
+    </array>
+</resources>

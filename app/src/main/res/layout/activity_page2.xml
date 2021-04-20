@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".page2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TV_RL_LL_CLG"
+                    android:layout_width="235dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="RL_LL_CLG"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/BTN_RL_LL_CLG_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="#8BC34A" />
+
+                <Button
+                    android:id="@+id/BTN_RL_LL_CLG_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_weight="1"
+                    android:background="#F44336" />
+
+                <TextView
+                    android:id="@+id/TV_RL_LL_CLD"
+                    android:layout_width="235dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="RL_LL_CLD"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/BTN_RL_LL_CLD_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="#8BC34A" />
+
+                <Button
+                    android:id="@+id/BTN_RL_LL_CLD_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_weight="1"
+                    android:background="#F44336" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TV_RL_LL_PF"
+                    android:layout_width="235dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="RL_LL_PF"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/BTN_RL_LL_PF_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="#8BC34A" />
+
+                <Button
+                    android:id="@+id/BTN_RL_LL_PF_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_weight="1"
+                    android:background="#F44336" />
+
+                <TextView
+                    android:id="@+id/TV_RL_LL_BTN"
+                    android:layout_width="235dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="RL_LL_BTN"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/BTN_RL_LL_BTN_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="#8BC34A" />
+
+                <Button
+                    android:id="@+id/BTN_RL_LL_BTN_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_weight="1"
+                    android:background="#F44336" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TV_RL_HL_CLEF"
+                    android:layout_width="235dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="RL_HL_CLEF"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/BTN_RL_HL_CLEF_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="#8BC34A" />
+
+                <Button
+                    android:id="@+id/BTN_RL_HL_CLEF_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_weight="1"
+                    android:background="#F44336" />
+
+                <TextView
+                    android:id="@+id/TV_RL_HL_12V"
+                    android:layout_width="235dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="RL_HL_12V"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/BTN_RL_HL_12V_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="#8BC34A" />
+
+                <Button
+                    android:id="@+id/BTN_RL_HL_12V_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_weight="1"
+                    android:background="#F44336" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TV_RL_HL_PRT1"
+                    android:layout_width="235dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="RL_HL_PRT1"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/BTN_RL_HL_PRT1_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="#8BC34A" />
+
+                <Button
+                    android:id="@+id/BTN_RL_HL_PRT1_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_weight="1"
+                    android:background="#F44336" />
+
+                <TextView
+                    android:id="@+id/TV_RL_LL_PRT2"
+                    android:layout_width="235dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="RL_LL_PRT2"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/BTN_RL_LL_PRT2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="#8BC34A" />
+
+                <Button
+                    android:id="@+id/BTN_RL_LL_PRT2_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_weight="1"
+                    android:background="#F44336" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TV_RL_LL_CHAR"
+                    android:layout_width="235dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="RL_LL_CHAR"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/BTN_RL_LL_CHAR_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="#8BC34A" />
+
+                <Button
+                    android:id="@+id/BTN_RL_LL_CHAR_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_weight="1"
+                    android:background="#F44336" />
+
+                <TextView
+                    android:id="@+id/TV_RL_HL_KLAX"
+                    android:layout_width="235dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="RL_HL_KLAX"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/BTN_RL_HL_KLAX_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="#8BC34A" />
+
+                <Button
+                    android:id="@+id/BTN_RL_HL_KLAX_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_weight="1"
+                    android:background="#F44336" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
