@@ -5,4 +5,4 @@ The phone checks the acceleration sensors for the alarm, receive every arduino p
 
 Edit to mention: the arduino estimates the battery percentage on an analog pin. There is a voltage divider between the battery (83V max) and the arduino (5V max)
 
-![alt text](http:https://github.com/Sichroteph/speedometer-master/blob/master/Note-pinout.png)
+![alt text](https://user-images.githubusercontent.com/16885275/115361480-eb652800-a1c0-11eb-9bd4-1d9657ae973b.png)
