@@ -11,6 +11,7 @@ Sorry for the pinout written in french, I will try in the future to make one in 
 
 There are two limitations that did not bother me much for my specific usage but needs to be issued in the long term : 
 1) Android automatically connects to the first bluetooth device registered. So in order to test the code I suggest you to remove the others.
-2) While the connection is solid (I left them paired for weeks), when it drops the Android code doesn't try to connect again. If Android tries to send a command at this time then the program will crash. 
+2) While the connection is solid (I left them paired for weeks), when it drops the Android code doesn't try to connect again. If Android tries to send a command at this time then the program will crash and you have to restart it. 
+3) Please wait 5 seconds after the program starts in order to ensure the connection is made. You can start the Android app on the page 1 in order to have more feedback on the connection.
 
 Please note that the Android app is designed to stay always on. It displays a black screen when it is in alarm mode. You can password pin the app in order to lock the user in it.
