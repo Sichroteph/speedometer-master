@@ -1,7 +1,7 @@
 # speedometer-master
 The Arduino communicate with the phone with a HC05 module. 
 
-The phone checks the acceleration sensors for the alarm, receive every arduino pins triggered by buttons and can turn on every relay inside the motorcycle. For example when there is a blinking light, it is the phone that turn it on and off. The blinking sound is an mp3 from an old Piaggio.
+The phone checks the acceleration sensors for the alarm, receive every arduino pins triggered by buttons and can turn on every relay inside the motorcycle. For example when there is a blinking light, it is the phone that turn it on and off. The blinking sound is an mp3 from an old Piaggio. It uses the fingerprint sensor to start the UI and the motorcycle.
 
 Edit to mention: the arduino estimates the battery percentage on an analog pin. There is a voltage divider between the battery (83V max) and the arduino (5V max)
 
@@ -13,4 +13,4 @@ There are two limitations that did not bother me much for my specific usage but 
 1) Android automatically connects to the first bluetooth device registered. So in order to test the code I suggest you to remove the others.
 2) While the connection is solid (I left them paired for weeks), when it drops the Android code doesn't try to connect again. If Android tries to send a command at this time then the program will crash. 
 
-Please note that the Android app is designed to stay always on. It displays a black screen when it is in alarm mode. 
+Please note that the Android app is designed to stay always on. It displays a black screen when it is in alarm mode. You can password pin the app in order to lock the user in it.
